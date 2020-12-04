@@ -75,7 +75,7 @@ class ContactController extends AbstractController
             'contact' => $contact,
         ]);
     }
-
+ 
     /**
      * @Route("/{id}/edit", name="contact_edit", methods={"GET","POST"})
      */
