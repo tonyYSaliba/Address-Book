@@ -48,6 +48,10 @@
                 <td>{{ contact.pictureUrl }}</td>
             </tr>
             <tr>
+                <th>Picture</th>
+                <td><img src="{{ asset('uploads/pictures/' ~ contact.pictureUrl) }}"></td>
+            </tr>
+            <tr>
                 <th>Country</th>
                 <td>{{ contact.country }}</td>
             </tr>

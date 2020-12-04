@@ -5,10 +5,12 @@ namespace App\Controller;
 use App\Entity\Contact;
 use App\Form\ContactType;
 use App\Repository\ContactRepository;
+use App\Service\FileUploader;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 /**
  * @Route("/contact")
@@ -28,11 +30,27 @@ class ContactController extends AbstractController
     /**
      * @Route("/new", name="contact_new", methods={"GET","POST"})
      */
-    public function new(Request $request): Response
+    public function new(Request $request, FileUploader $fileUploader): Response
     {
+        
         $contact = new Contact();
         $form = $this->createForm(ContactType::class, $contact);
         $form->handleRequest($request);
+
+    // ...
+
+    if ($form->isSubmitted() && $form->isValid()) {
+        /** @var UploadedFile $pictureFile */
+        $pictureFile = $form->get('picture')->getData();
+        if ($pictureFile) {
+            $pictureUrl = $fileUploader->upload($pictureFile);
+            $contact->setPictureUrl($pictureUrl);
+        }
+
+        // ...
+    }
+
+    // ...
 
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager = $this->getDoctrine()->getManager();

@@ -18,6 +18,7 @@
                 <th>BirthDate</th>
                 <th>EmailAddress</th>
                 <th>PictureUrl</th>
+                <th>Picture</th>
                 <th>Country</th>
                 <th>actions</th>
             </tr>
@@ -35,6 +36,7 @@
                 <td>{{ contact.birthDate ? contact.birthDate|date('Y-m-d') : '' }}</td>
                 <td>{{ contact.emailAddress }}</td>
                 <td>{{ contact.pictureUrl }}</td>
+                <td><img src="{{ asset('uploads/pictures/' ~ contact.pictureUrl) }}"></td>
                 <td>{{ contact.country }}</td>
                 <td>
                     <a href="{{ path('contact_show', {'id': contact.id}) }}">show</a>
