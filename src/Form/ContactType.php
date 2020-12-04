@@ -5,6 +5,7 @@ namespace App\Form;
 use App\Entity\Contact;
 use PhpParser\Node\Scalar\MagicConst\File;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
@@ -20,7 +21,10 @@ class ContactType extends AbstractType
             ->add('zipCode')
             ->add('city')
             ->add('phoneNumber')
-            ->add('birthDate')
+            ->add('birthDate', DateType::class, [
+                'label'     => 'Set date',
+                'widget'    => 'single_text',
+            ])
             ->add('emailAddress')
             ->add('pictureUrl')
             ->add('country')
