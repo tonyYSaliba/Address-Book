@@ -3,12 +3,12 @@
 namespace App\Form;
 
 use App\Entity\Contact;
-use PhpParser\Node\Scalar\MagicConst\File;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
+use Symfony\Component\Validator\Constraints\File;
 
 class ContactType extends AbstractType
 {
@@ -41,16 +41,16 @@ class ContactType extends AbstractType
 
                 // unmapped fields can't define their validation using annotations
                 // in the associated entity, so you can use the PHP constraint classes
-                // 'constraints' => [
-                //     new File([
-                //         'maxSize' => '1024k',
-                //         'mimeTypes' => [
-                //             'image/jpeg',
-                //             'image/png',
-                //         ],
-                //         'mimeTypesMessage' => 'Please upload a valid PNG/JPEG file',
-                //     ])
-                // ],
+                'constraints' => [
+                    new File([
+                        'maxSize' => '1024k',
+                        'mimeTypes' => [
+                            'image/jpeg',
+                            'image/png',
+                        ],
+                        'mimeTypesMessage' => 'Please upload a valid PNG/JPEG file',
+                    ])
+                ],
             ])
             // ...
         ;
