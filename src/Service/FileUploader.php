@@ -1,6 +1,7 @@
 <?php
 namespace App\Service;
 
+use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\HttpFoundation\File\Exception\FileException;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Symfony\Component\String\Slugger\SluggerInterface;
@@ -29,6 +30,15 @@ class FileUploader
         }
 
         return $fileName;
+    }
+
+    public function deleteFile(string $fileName)
+    {
+        $filesystem = new Filesystem();
+        $result = $filesystem->remove($this->getTargetDirectory(),$fileName);
+        if ($result === false) {
+            throw new \Exception(sprintf('Error deleting "%s"', $fileName));
+        }
     }
 
     public function getTargetDirectory()
