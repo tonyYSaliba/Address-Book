@@ -37,22 +37,12 @@ class ContactController extends AbstractController
         $form = $this->createForm(ContactType::class, $contact);
         $form->handleRequest($request);
 
-    // ...
-
-    if ($form->isSubmitted() && $form->isValid()) {
-        /** @var UploadedFile $pictureFile */
-        $pictureFile = $form->get('picture')->getData();
-        if ($pictureFile) {
-            $pictureUrl = $fileUploader->upload($pictureFile);
-            $contact->setPictureUrl($pictureUrl);
-        }
-
-        // ...
-    }
-
-    // ...
-
         if ($form->isSubmitted() && $form->isValid()) {
+            $pictureFile = $form->get('picture')->getData();
+            if ($pictureFile) {
+                $pictureUrl = $fileUploader->upload($pictureFile);
+                $contact->setPictureUrl($pictureUrl);
+            }
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($contact);
             $entityManager->flush();
