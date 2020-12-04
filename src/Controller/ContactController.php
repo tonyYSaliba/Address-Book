@@ -79,12 +79,21 @@ class ContactController extends AbstractController
     /**
      * @Route("/{id}/edit", name="contact_edit", methods={"GET","POST"})
      */
-    public function edit(Request $request, Contact $contact): Response
+    public function edit(Request $request, Contact $contact, FileUploader $fileUploader): Response
     {
         $form = $this->createForm(ContactType::class, $contact);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+
+        /** @var UploadedFile $pictureFile */
+        $pictureFile = $form->get('picture')->getData();
+        if ($pictureFile) {
+            $fileUploader->deleteFile($contact->getPictureUrl());
+            $pictureUrl = $fileUploader->upload($pictureFile);
+            $contact->setPictureUrl($pictureUrl);
+        }
+
             $this->getDoctrine()->getManager()->flush();
 
             return $this->redirectToRoute('contact_index');
