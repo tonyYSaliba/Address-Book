@@ -3,11 +3,25 @@
 {% block title %}Edit Contact{% endblock %}
 
 {% block body %}
-    <h1>Edit Contact</h1>
+    <div class="container-fluid">
+        <div class="table-responsive">
+            <div class="table-wrapper">
+    			<div class="table-title">
+                    <div class="row">
+                        <div class="col-sm-1">
+                            <a href="{{ path('contact_index') }}"><i class="fa fa-chevron-circle-left" style="font-size:48px;color:white"></i></a>
+                        </div>
+                        <div class="col-sm-6">
+                            <h1>Add <b>Contact</b></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{ include('contact/_form.html.twig', {'button_label': 'Update'}) }}
+        <br />
+        {{ include('contact/_delete_form.html.twig') }}
+    </div>
 
-    {{ include('contact/_form.html.twig', {'button_label': 'Update'}) }}
-
-    <a href="{{ path('contact_index') }}">back to list</a>
-
-    {{ include('contact/_delete_form.html.twig') }}
 {% endblock %}
+

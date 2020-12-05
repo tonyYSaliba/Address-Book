@@ -3,64 +3,71 @@
 {% block title %}Contact{% endblock %}
 
 {% block body %}
-    <h1>Contact</h1>
-
-    <table class="table">
-        <tbody>
-            <tr>
-                <th>Id</th>
-                <td>{{ contact.id }}</td>
-            </tr>
-            <tr>
-                <th>FirstName</th>
-                <td>{{ contact.firstName }}</td>
-            </tr>
-            <tr>
-                <th>LastName</th>
-                <td>{{ contact.lastName }}</td>
-            </tr>
-            <tr>
-                <th>StreetAddress</th>
-                <td>{{ contact.streetAddress }}</td>
-            </tr>
-            <tr>
-                <th>ZipCode</th>
-                <td>{{ contact.zipCode }}</td>
-            </tr>
-            <tr>
-                <th>City</th>
-                <td>{{ contact.city }}</td>
-            </tr>
-            <tr>
-                <th>PhoneNumber</th>
-                <td>{{ contact.phoneNumber }}</td>
-            </tr>
-            <tr>
-                <th>BirthDate</th>
-                <td>{{ contact.birthDate ? contact.birthDate|date('Y-m-d') : '' }}</td>
-            </tr>
-            <tr>
-                <th>EmailAddress</th>
-                <td>{{ contact.emailAddress }}</td>
-            </tr>
-            <tr>
-                <th>PictureUrl</th>
-                <td>{{ contact.pictureUrl }}</td>
-            </tr>
-            <tr>
-                <th>Picture</th>
-                <td><img src="{{ asset('uploads/pictures/' ~ contact.pictureUrl) }}"></td>
-            </tr>
-            <tr>
-                <th>Country</th>
-                <td>{{ contact.country }}</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <a href="{{ path('contact_index') }}">back to list</a>
-
-    <a href="{{ path('contact_edit', {'id': contact.id}) }}">edit</a>
-
-    {{ include('contact/_delete_form.html.twig') }}
+    <div class="container-fluid">
+        <div class="table-responsive">
+            <div class="table-wrapper">
+    			<div class="table-title">
+                    <div class="row">
+                        <div class="col-sm-1">                        
+                            <a href="{{ path('contact_index') }}"><i class="fa fa-chevron-circle-left" style="font-size:48px;color:white"></i></a>
+                        </div>
+                        <div class="col-sm-6">
+                            <h1><b>Contact</b></h1>
+                        </div>
+                    </div>
+                </div>
+                <table class="table table-striped table-hover">
+                    <tbody>
+                        <tr>
+                            <th>Id</th>
+                            <td>{{ contact.id }}</td>
+                        </tr>
+                        <tr>
+                            <th>Picture</th>
+                            <td><img height ="20%" width = "20%" alt = "N/A" src="{{ asset('uploads/pictures/' ~ contact.pictureUrl) }}"></td>
+                        </tr>
+                        <tr>
+                            <th>First Name</th>
+                            <td>{{ contact.firstName }}</td>
+                        </tr>
+                        <tr>
+                            <th>Last Name</th>
+                            <td>{{ contact.lastName }}</td>
+                        </tr>
+                        <tr>
+                            <th>Street Address</th>
+                            <td>{{ contact.streetAddress }}</td>
+                        </tr>
+                        <tr>
+                            <th>Zip Code</th>
+                            <td>{{ contact.zipCode }}</td>
+                        </tr>
+                        <tr>
+                            <th>City</th>
+                            <td>{{ contact.city }}</td>
+                        </tr>
+                        <tr>
+                            <th>Phone Number</th>
+                            <td>{{ contact.phoneNumber }}</td>
+                        </tr>
+                        <tr>
+                            <th>Birth Date</th>
+                            <td>{{ contact.birthDate ? contact.birthDate|date('Y-m-d') : '' }}</td>
+                        </tr>
+                        <tr>
+                            <th>Email Address</th>
+                            <td>{{ contact.emailAddress }}</td>
+                        </tr>
+                        <tr>
+                            <th>Country</th>
+                            <td>{{ contact.country }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <a href="{{ path('contact_edit', {'id': contact.id}) }}"> <button type = "button" class="btn btn-info btn-lg btn-block">Edit</button></a>
+        <br/>
+        {{ include('contact/_delete_form.html.twig') }}
+    </div>
 {% endblock %}

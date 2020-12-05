@@ -8,6 +8,7 @@ use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Validator\Constraints\File;
 
 class ContactType extends AbstractType
@@ -15,32 +16,38 @@ class ContactType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('firstName')
-            ->add('lastName')
-            ->add('streetAddress')
-            ->add('zipCode')
-            ->add('city')
-            ->add('phoneNumber')
-            ->add('birthDate', DateType::class, [
-                'label'     => 'Set date',
+            ->add('firstName', TextType::class, [
+                'label'     => 'First Name',
+            ])
+            ->add('lastName', null, [
+                'label'     => 'Last Name',
+            ])
+            ->add('streetAddress', null, [
+                'label'     => 'Street Address',
+            ])
+            ->add('zipCode', null, [
+                'label'     => 'Zip Code',
+            ])
+            ->add('city', null, [
+                'label'     => 'City',
+            ])
+            ->add('country', null, [
+                'label'     => 'Country',
+            ])
+            ->add('phoneNumber', null, [
+                'label'     => 'Phone Number',
+            ])
+            ->add('birthDate', null, [
+                'label'     => 'Birth Date',
                 'widget'    => 'single_text',
             ])
-            ->add('emailAddress')
-            ->add('pictureUrl')
-            ->add('country')
-             // ...
+            ->add('emailAddress', null, [
+                'label'     => 'Email Address',
+            ])
             ->add('picture', FileType::class, [
                 'label' => 'Picture (PNG/JPG file)',
-
-                // unmapped means that this field is not associated to any entity property
                 'mapped' => false,
-
-                // make it optional so you don't have to re-upload the PDF file
-                // every time you edit the Product details
                 'required' => false,
-
-                // unmapped fields can't define their validation using annotations
-                // in the associated entity, so you can use the PHP constraint classes
                 'constraints' => [
                     new File([
                         'maxSize' => '1024k',
@@ -52,7 +59,6 @@ class ContactType extends AbstractType
                     ])
                 ],
             ])
-            // ...
         ;
     }
 
