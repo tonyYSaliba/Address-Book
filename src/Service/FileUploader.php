@@ -37,7 +37,7 @@ class FileUploader
         $filesystem = new Filesystem();
         $result = $filesystem->remove($this->getTargetDirectory(),$fileName);
         if ($result === false) {
-            throw new \Exception(sprintf('Error deleting "%s"', $fileName));
+            throw new FileException(sprintf('Error deleting "%s"', $fileName));
         }
     }
 
