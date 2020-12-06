@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use App\Repository\ContactRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass=ContactRepository::class)
@@ -19,6 +20,7 @@ class Contact
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\NotNull
      */
     private $firstName;
 
@@ -29,31 +31,37 @@ class Contact
 
     /**
      * @ORM\Column(type="string", length=1023, nullable=true)
+     * @Assert\Regex(pattern="/^(([0-9a-zA-Z])*( )?)*[0-9a-zA-Z]+$/")
      */
     private $streetAddress;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
+     * @Assert\Regex(pattern="/^(([0-9a-zA-Z])*( )?)*[0-9a-zA-Z]+$/")
      */
     private $zipCode;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
+     * @Assert\Regex(pattern="/^(([0-9a-zA-Z])*( )?)*[0-9a-zA-Z]+$/")
      */
     private $city;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
+     * @Assert\Regex(pattern="/^\+?([0-9]+( )?)+( )*$/", message="number_only")
      */
     private $phoneNumber;
 
     /**
      * @ORM\Column(type="date", nullable=true)
+     * @Assert\Date
      */
     private $birthDate;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
+     * @Assert\Email
      */
     private $emailAddress;
 
@@ -64,6 +72,7 @@ class Contact
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
+     * @Assert\Regex(pattern="/^(([0-9a-zA-Z])*( )?)*[0-9a-zA-Z]+$/")
      */
     private $country;
 
