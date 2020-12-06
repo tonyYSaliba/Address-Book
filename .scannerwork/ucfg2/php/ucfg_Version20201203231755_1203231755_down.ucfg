@@ -1,18 +1,0 @@
-
-.doctrinemigrations\version20201203231755::down`
-VC:\Users\Tony\Desktop\career\symfony\address_book\migrations\Version20201203231755.php ("1*™
-2
-Version20201203231755.php"w
-`
-VC:\Users\Tony\Desktop\career\symfony\address_book\migrations\Version20201203231755.php (
-implicit return*¨
-1`
-VC:\Users\Tony\Desktop\career\symfony\address_book\migrations\Version20201203231755.php (,»¸
-`
-VC:\Users\Tony\Desktop\career\symfony\address_book\migrations\Version20201203231755.php (+
-%1*,*
-(doctrinemigrations\version20201203231755*
-'DROP TABLE contact'2addsql*
-2:&
-$schemadoctrine\dbal\schema\schemaB,*
-(doctrinemigrations\version20201203231755
