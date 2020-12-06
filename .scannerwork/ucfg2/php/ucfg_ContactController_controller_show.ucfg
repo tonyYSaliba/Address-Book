@@ -1,0 +1,31 @@
+
+&app\controller\contactcontroller::show`
+VC:\Users\Tony\Desktop\career\symfony\address_book\src\Controller\ContactController.php> >("1*¸
+1`
+VC:\Users\Tony\Desktop\career\symfony\address_book\src\Controller\ContactController.php@ B(rp
+`
+VC:\Users\Tony\Desktop\career\symfony\address_book\src\Controller\ContactController.php@7 B(	
+%1"$Array®
+«
+`
+VC:\Users\Tony\Desktop\career\symfony\address_book\src\Controller\ContactController.php@7 B(	
+%2"__mapSet*
+
+%1*
+	'contact'* 
+
+$contactapp\entity\contact¿¼
+`
+VC:\Users\Tony\Desktop\career\symfony\address_book\src\Controller\ContactController.php@ B(
+
+%3*$"
+ app\controller\contactcontroller*
+'contact/show.html.twig'*
+
+%12render"j
+`
+VC:\Users\Tony\Desktop\career\symfony\address_book\src\Controller\ContactController.php@ B(
+
+%3:
+$contactapp\entity\contactB$"
+ app\controller\contactcontroller

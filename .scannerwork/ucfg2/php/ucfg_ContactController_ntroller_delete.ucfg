@@ -1,0 +1,101 @@
+
+(app\controller\contactcontroller::delete`
+VC:\Users\Tony\Desktop\career\symfony\address_book\src\Controller\ContactController.phpe e("1*™	
+2`
+VC:\Users\Tony\Desktop\career\symfony\address_book\src\Controller\ContactController.phph h(@ž›
+`
+VC:\Users\Tony\Desktop\career\symfony\address_book\src\Controller\ContactController.phph h(1
+%6*$"
+ app\controller\contactcontroller2getdoctrine~|
+`
+VC:\Users\Tony\Desktop\career\symfony\address_book\src\Controller\ContactController.phph h(?
+%7*
+
+%62
+getmanager…
+‚
+`
+VC:\Users\Tony\Desktop\career\symfony\address_book\src\Controller\ContactController.phph h(?
+$entityManager"__id*
+
+%7©¦
+`
+VC:\Users\Tony\Desktop\career\symfony\address_book\src\Controller\ContactController.phpi i(,
+%8*
+
+$entityManager* 
+
+$contactapp\entity\contact2remove†ƒ
+`
+VC:\Users\Tony\Desktop\career\symfony\address_book\src\Controller\ContactController.phpj j(#
+%9*
+
+$entityManager2flushš
+`
+VC:\Users\Tony\Desktop\career\symfony\address_book\src\Controller\ContactController.phpk& k(?
+%10* 
+
+$contactapp\entity\contact2getpictureurl®«
+`
+VC:\Users\Tony\Desktop\career\symfony\address_book\src\Controller\ContactController.phpk k(@
+%11*+
+)
+$fileUploaderapp\service\fileuploader*
+
+%102
+deletefile*
+3*
+3`
+VC:\Users\Tony\Desktop\career\symfony\address_book\src\Controller\ContactController.phpn n(7¸µ
+`
+VC:\Users\Tony\Desktop\career\symfony\address_book\src\Controller\ContactController.phpn n(6
+%12*$"
+ app\controller\contactcontroller*
+'contact_index'2redirecttoroute"k
+`
+VC:\Users\Tony\Desktop\career\symfony\address_book\src\Controller\ContactController.phpn n(7
+
+%12*Š
+1`
+VC:\Users\Tony\Desktop\career\symfony\address_book\src\Controller\ContactController.phpg g(a”‘
+`
+VC:\Users\Tony\Desktop\career\symfony\address_book\src\Controller\ContactController.phpg- g(>
+%1* 
+
+$contactapp\entity\contact2getid‹
+ˆ
+`
+VC:\Users\Tony\Desktop\career\symfony\address_book\src\Controller\ContactController.phpg$ g(>
+%2"__concat*
+
+'delete'*
+
+%1¶
+³
+`
+VC:\Users\Tony\Desktop\career\symfony\address_book\src\Controller\ContactController.phpg@ g(Q
+%3"__id*C*A
+4
+$request(symfony\component\httpfoundation\request"	
+request†ƒ
+`
+VC:\Users\Tony\Desktop\career\symfony\address_book\src\Controller\ContactController.phpg@ g(`
+%4*
+
+%3*
+
+'_token'2get³°
+`
+VC:\Users\Tony\Desktop\career\symfony\address_book\src\Controller\ContactController.phpg g(a
+%5*$"
+ app\controller\contactcontroller*
+
+%2*
+
+%42iscsrftokenvalid*
+2
+3:4
+$request(symfony\component\httpfoundation\request:
+$contactapp\entity\contact:)
+$fileUploaderapp\service\fileuploaderB$"
+ app\controller\contactcontroller

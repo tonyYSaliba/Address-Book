@@ -1,0 +1,37 @@
+
+'app\controller\contactcontroller::index`
+VC:\Users\Tony\Desktop\career\symfony\address_book\src\Controller\ContactController.php ("1*Ñ
+1`
+VC:\Users\Tony\Desktop\career\symfony\address_book\src\Controller\ContactController.php (rp
+`
+VC:\Users\Tony\Desktop\career\symfony\address_book\src\Controller\ContactController.php8 (	
+%1"$Array®«
+`
+VC:\Users\Tony\Desktop\career\symfony\address_book\src\Controller\ContactController.php (7
+%2*8
+6
+$contactRepository app\repository\contactrepository2findall•
+’
+`
+VC:\Users\Tony\Desktop\career\symfony\address_book\src\Controller\ContactController.php8 (	
+%3"__mapSet*
+
+%1*
+
+'contacts'*
+
+%2À½
+`
+VC:\Users\Tony\Desktop\career\symfony\address_book\src\Controller\ContactController.php (
+
+%4*$"
+ app\controller\contactcontroller*
+'contact/index.html.twig'*
+
+%12render"j
+`
+VC:\Users\Tony\Desktop\career\symfony\address_book\src\Controller\ContactController.php (
+
+%4:6
+$contactRepository app\repository\contactrepositoryB$"
+ app\controller\contactcontroller

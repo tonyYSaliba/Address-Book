@@ -1,0 +1,18 @@
+
+,doctrinemigrations\version20201203231755::up`
+VC:\Users\Tony\Desktop\career\symfony\address_book\migrations\Version20201203231755.php ("1*™
+2
+Version20201203231755.php"w
+`
+VC:\Users\Tony\Desktop\career\symfony\address_book\migrations\Version20201203231755.php (
+implicit return*œ
+1a
+VC:\Users\Tony\Desktop\career\symfony\address_book\migrations\Version20201203231755.php (›®«
+a
+VC:\Users\Tony\Desktop\career\symfony\address_book\migrations\Version20201203231755.php (š
+%1*,*
+(doctrinemigrations\version20201203231755*‰†
+ƒ'CREATE TABLE contact (id INT AUTO_INCREMENT NOT NULL, first_name VARCHAR(255) NOT NULL, last_name VARCHAR(255) DEFAULT NULL, street_address VARCHAR(1023) DEFAULT NULL, zip_code VARCHAR(255) DEFAULT NULL, city VARCHAR(255) DEFAULT NULL, phone_number VARCHAR(255) DEFAULT NULL, birth_date DATE DEFAULT NULL, email_address VARCHAR(255) DEFAULT NULL, picture_url VARCHAR(1023) DEFAULT NULL, country VARCHAR(255) DEFAULT NULL, PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE `utf8mb4_unicode_ci` ENGINE = InnoDB'2addsql*
+2:&
+$schemadoctrine\dbal\schema\schemaB,*
+(doctrinemigrations\version20201203231755
