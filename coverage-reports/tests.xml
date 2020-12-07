@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Project Test Suite" tests="2" assertions="2" errors="0" failures="0" skipped="0" time="0.006383">
+    <testsuite name="App\Tests\Entity\ContactTest" file="C:\Users\Tony\Desktop\career\symfony\address_book\tests\Entity\ContactTest.php" tests="2" assertions="2" errors="0" failures="0" skipped="0" time="0.006383">
+      <testcase name="testSetFirstName1" class="App\Tests\Entity\ContactTest" classname="App.Tests.Entity.ContactTest" file="C:\Users\Tony\Desktop\career\symfony\address_book\tests\Entity\ContactTest.php" line="10" assertions="1" time="0.006321"/>
+      <testcase name="testSetLastName1" class="App\Tests\Entity\ContactTest" classname="App.Tests.Entity.ContactTest" file="C:\Users\Tony\Desktop\career\symfony\address_book\tests\Entity\ContactTest.php" line="16" assertions="1" time="0.000062"/>
+    </testsuite>
+  </testsuite>
+</testsuites>
