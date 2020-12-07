@@ -5,10 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Listen for XDebug",
+            "name": "Xdebug for Docker",
             "type": "php",
             "request": "launch",
-            "port": 9000
+            "port": 9000,
+            "pathMappings": {
+                "dockerPath": "${workspaceFolder}"
+            }
         },
         {
             "name": "Launch currently open script",
