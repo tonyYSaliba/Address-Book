@@ -55,7 +55,6 @@ class Contact
 
     /**
      * @ORM\Column(type="date", nullable=true)
-     * @Assert\Date
      */
     private $birthDate;
 
@@ -76,6 +75,9 @@ class Contact
      */
     private $country;
 
+    /**
+     * @codeCoverageIgnore
+     */
     public function getId(): ?int
     {
         return $this->id;

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1607379506">
-  <project timestamp="1607379506">
+<coverage generated="1607388322">
+  <project timestamp="1607388322">
     <package name="App\Controller">
       <file name="C:\Users\Tony\Desktop\career\symfony\address_book\src\Controller\ContactController.php">
         <class name="App\Controller\ContactController" namespace="App\Controller">
@@ -55,61 +55,59 @@
     <package name="App\Entity">
       <file name="C:\Users\Tony\Desktop\career\symfony\address_book\src\Entity\Contact.php">
         <class name="App\Entity\Contact" namespace="App\Entity">
-          <metrics complexity="40" methods="21" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="31" coveredstatements="3" elements="52" coveredelements="5"/>
+          <metrics complexity="40" methods="20" coveredmethods="20" conditionals="0" coveredconditionals="0" statements="30" coveredstatements="30" elements="50" coveredelements="50"/>
         </class>
-        <line num="79" type="method" name="getId" visibility="public" complexity="2" crap="6.00" count="0"/>
-        <line num="81" type="stmt" count="0"/>
-        <line num="84" type="method" name="getFirstName" visibility="public" complexity="2" crap="2" count="2"/>
-        <line num="86" type="stmt" count="2"/>
-        <line num="89" type="method" name="setFirstName" visibility="public" complexity="1" crap="1" count="2"/>
-        <line num="91" type="stmt" count="2"/>
-        <line num="93" type="stmt" count="2"/>
-        <line num="96" type="method" name="getLastName" visibility="public" complexity="2" crap="6.00" count="0"/>
-        <line num="98" type="stmt" count="0"/>
-        <line num="101" type="method" name="setLastName" visibility="public" complexity="2" crap="6.00" count="0"/>
-        <line num="103" type="stmt" count="0"/>
-        <line num="105" type="stmt" count="0"/>
-        <line num="108" type="method" name="getStreetAddress" visibility="public" complexity="2" crap="6.00" count="0"/>
-        <line num="110" type="stmt" count="0"/>
-        <line num="113" type="method" name="setStreetAddress" visibility="public" complexity="2" crap="6.00" count="0"/>
-        <line num="115" type="stmt" count="0"/>
-        <line num="117" type="stmt" count="0"/>
-        <line num="120" type="method" name="getZipCode" visibility="public" complexity="2" crap="6.00" count="0"/>
-        <line num="122" type="stmt" count="0"/>
-        <line num="125" type="method" name="setZipCode" visibility="public" complexity="2" crap="6.00" count="0"/>
-        <line num="127" type="stmt" count="0"/>
-        <line num="129" type="stmt" count="0"/>
-        <line num="132" type="method" name="getCity" visibility="public" complexity="2" crap="6.00" count="0"/>
-        <line num="134" type="stmt" count="0"/>
-        <line num="137" type="method" name="setCity" visibility="public" complexity="1" crap="2.00" count="0"/>
-        <line num="139" type="stmt" count="0"/>
-        <line num="141" type="stmt" count="0"/>
-        <line num="144" type="method" name="getPhoneNumber" visibility="public" complexity="2" crap="6.00" count="0"/>
-        <line num="146" type="stmt" count="0"/>
-        <line num="149" type="method" name="setPhoneNumber" visibility="public" complexity="2" crap="6.00" count="0"/>
-        <line num="151" type="stmt" count="0"/>
-        <line num="153" type="stmt" count="0"/>
-        <line num="156" type="method" name="getBirthDate" visibility="public" complexity="2" crap="6.00" count="0"/>
-        <line num="158" type="stmt" count="0"/>
-        <line num="161" type="method" name="setBirthDate" visibility="public" complexity="2" crap="6.00" count="0"/>
-        <line num="163" type="stmt" count="0"/>
-        <line num="165" type="stmt" count="0"/>
-        <line num="168" type="method" name="getEmailAddress" visibility="public" complexity="2" crap="6.00" count="0"/>
-        <line num="170" type="stmt" count="0"/>
-        <line num="173" type="method" name="setEmailAddress" visibility="public" complexity="2" crap="6.00" count="0"/>
-        <line num="175" type="stmt" count="0"/>
-        <line num="177" type="stmt" count="0"/>
-        <line num="180" type="method" name="getPictureUrl" visibility="public" complexity="2" crap="6.00" count="0"/>
-        <line num="182" type="stmt" count="0"/>
-        <line num="185" type="method" name="setPictureUrl" visibility="public" complexity="2" crap="6.00" count="0"/>
-        <line num="187" type="stmt" count="0"/>
-        <line num="189" type="stmt" count="0"/>
-        <line num="192" type="method" name="getCountry" visibility="public" complexity="2" crap="6.00" count="0"/>
-        <line num="194" type="stmt" count="0"/>
-        <line num="197" type="method" name="setCountry" visibility="public" complexity="2" crap="6.00" count="0"/>
-        <line num="199" type="stmt" count="0"/>
-        <line num="201" type="stmt" count="0"/>
-        <metrics loc="203" ncloc="157" classes="1" methods="21" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="31" coveredstatements="3" elements="52" coveredelements="5"/>
+        <line num="86" type="method" name="getFirstName" visibility="public" complexity="2" crap="2" count="1"/>
+        <line num="88" type="stmt" count="1"/>
+        <line num="91" type="method" name="setFirstName" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="93" type="stmt" count="1"/>
+        <line num="95" type="stmt" count="1"/>
+        <line num="98" type="method" name="getLastName" visibility="public" complexity="2" crap="2" count="1"/>
+        <line num="100" type="stmt" count="1"/>
+        <line num="103" type="method" name="setLastName" visibility="public" complexity="2" crap="2" count="1"/>
+        <line num="105" type="stmt" count="1"/>
+        <line num="107" type="stmt" count="1"/>
+        <line num="110" type="method" name="getStreetAddress" visibility="public" complexity="2" crap="2" count="1"/>
+        <line num="112" type="stmt" count="1"/>
+        <line num="115" type="method" name="setStreetAddress" visibility="public" complexity="2" crap="2" count="1"/>
+        <line num="117" type="stmt" count="1"/>
+        <line num="119" type="stmt" count="1"/>
+        <line num="122" type="method" name="getZipCode" visibility="public" complexity="2" crap="2" count="1"/>
+        <line num="124" type="stmt" count="1"/>
+        <line num="127" type="method" name="setZipCode" visibility="public" complexity="2" crap="2" count="1"/>
+        <line num="129" type="stmt" count="1"/>
+        <line num="131" type="stmt" count="1"/>
+        <line num="134" type="method" name="getCity" visibility="public" complexity="2" crap="2" count="1"/>
+        <line num="136" type="stmt" count="1"/>
+        <line num="139" type="method" name="setCity" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="141" type="stmt" count="1"/>
+        <line num="143" type="stmt" count="1"/>
+        <line num="146" type="method" name="getPhoneNumber" visibility="public" complexity="2" crap="2" count="1"/>
+        <line num="148" type="stmt" count="1"/>
+        <line num="151" type="method" name="setPhoneNumber" visibility="public" complexity="2" crap="2" count="1"/>
+        <line num="153" type="stmt" count="1"/>
+        <line num="155" type="stmt" count="1"/>
+        <line num="158" type="method" name="getBirthDate" visibility="public" complexity="2" crap="2" count="1"/>
+        <line num="160" type="stmt" count="1"/>
+        <line num="163" type="method" name="setBirthDate" visibility="public" complexity="2" crap="2" count="1"/>
+        <line num="165" type="stmt" count="1"/>
+        <line num="167" type="stmt" count="1"/>
+        <line num="170" type="method" name="getEmailAddress" visibility="public" complexity="2" crap="2" count="1"/>
+        <line num="172" type="stmt" count="1"/>
+        <line num="175" type="method" name="setEmailAddress" visibility="public" complexity="2" crap="2" count="1"/>
+        <line num="177" type="stmt" count="1"/>
+        <line num="179" type="stmt" count="1"/>
+        <line num="182" type="method" name="getPictureUrl" visibility="public" complexity="2" crap="2" count="1"/>
+        <line num="184" type="stmt" count="1"/>
+        <line num="187" type="method" name="setPictureUrl" visibility="public" complexity="2" crap="2" count="1"/>
+        <line num="189" type="stmt" count="1"/>
+        <line num="191" type="stmt" count="1"/>
+        <line num="194" type="method" name="getCountry" visibility="public" complexity="2" crap="2" count="1"/>
+        <line num="196" type="stmt" count="1"/>
+        <line num="199" type="method" name="setCountry" visibility="public" complexity="2" crap="2" count="1"/>
+        <line num="201" type="stmt" count="1"/>
+        <line num="203" type="stmt" count="1"/>
+        <metrics loc="205" ncloc="157" classes="1" methods="20" coveredmethods="20" conditionals="0" coveredconditionals="0" statements="30" coveredstatements="30" elements="50" coveredelements="50"/>
       </file>
     </package>
     <package name="App\Form">
@@ -176,12 +174,9 @@
     <package name="App\Repository">
       <file name="C:\Users\Tony\Desktop\career\symfony\address_book\src\Repository\ContactRepository.php">
         <class name="App\Repository\ContactRepository" namespace="App\Repository">
-          <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
+          <metrics complexity="1" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
         </class>
-        <line num="17" type="method" name="__construct" visibility="public" complexity="1" crap="2.00" count="0"/>
-        <line num="19" type="stmt" count="0"/>
-        <line num="20" type="stmt" count="0"/>
-        <metrics loc="21" ncloc="15" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
+        <metrics loc="22" ncloc="15" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
       </file>
     </package>
     <package name="App\Service">
@@ -211,6 +206,6 @@
         <metrics loc="48" ncloc="46" classes="1" methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="0" elements="19" coveredelements="0"/>
       </file>
     </package>
-    <metrics files="6" loc="493" ncloc="420" classes="6" methods="35" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="127" coveredstatements="3" elements="162" coveredelements="5"/>
+    <metrics files="6" loc="496" ncloc="420" classes="5" methods="33" coveredmethods="20" conditionals="0" coveredconditionals="0" statements="124" coveredstatements="30" elements="157" coveredelements="50"/>
   </project>
 </coverage>
