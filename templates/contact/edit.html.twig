@@ -12,12 +12,13 @@
                             <a href="{{ path('contact_index') }}"><i class="fa fa-chevron-circle-left" style="font-size:48px;color:white"></i></a>
                         </div>
                         <div class="col-sm-6">
-                            <h1>Add <b>Contact</b></h1>
+                            <h1>Edit <b>Contact</b></h1>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <img height ="100px" width = "100px" alt = "N/A" src="{{ asset('uploads/pictures/' ~ contact.pictureUrl) }}">
         {{ include('contact/_form.html.twig', {'button_label': 'Update'}) }}
         <br />
         {{ include('contact/_delete_form.html.twig') }}

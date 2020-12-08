@@ -79,7 +79,8 @@ class ContactController extends AbstractController
         /** @var UploadedFile $pictureFile */
         $pictureFile = $form->get('picture')->getData();
         if ($pictureFile) {
-            $fileUploader->deleteFile($contact->getPictureUrl());
+            if($contact->getPictureUrl())
+                $fileUploader->deleteFile($contact->getPictureUrl());
             $pictureUrl = $fileUploader->upload($pictureFile);
             $contact->setPictureUrl($pictureUrl);
         }
@@ -104,7 +105,8 @@ class ContactController extends AbstractController
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->remove($contact);
             $entityManager->flush();
-            $fileUploader->deleteFile($contact->getPictureUrl());
+            if($contact->getPictureUrl())
+                $fileUploader->deleteFile($contact->getPictureUrl());
         }
 
         return $this->redirectToRoute('contact_index');

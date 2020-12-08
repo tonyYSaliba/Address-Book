@@ -32,7 +32,7 @@ class FileUploader
         return $fileName;
     }
 
-    public function deleteFile(string $fileName)
+    public function deleteFile(string $fileName = "")
     {
         $filesystem = new Filesystem();
         $result = $filesystem->remove($this->getTargetDirectory(),$fileName);
