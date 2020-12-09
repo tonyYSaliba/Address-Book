@@ -107,11 +107,11 @@ package "address_book.src.entity" {
 
 }
 
-package "it.polito.ezgas.repository" {
+package "address_book.src.repository" {
 
 }
 
-package "it.polito.ezgas.form" {
+package "address_book.src.form" {
 
 }
 
@@ -123,7 +123,7 @@ package "it.polito.ezgas.form" {
 Each Model class should have a corresponding class in this package. Model classes contain the data that the application must handle.
 The various models of the application are organised under the model package.
 
-In the Entity package all the Entities of the system are provided. Entities classes provide the model of the application, and represent all the data that the application must handle.
+In the Entity package all the Entities of the system are provided. Entity classes provide the model of the application, and represent all the data that the application must handle.
 
 
 **Repository Package**
@@ -208,31 +208,6 @@ package "src.Form" {
    }
 }
 
-package "address_book.templates.contact" {
-      class "_delete_form"{
-
-      }
-      class "_form"{
-
-      }
-      class "edit"{
-
-      }
-      class "index"{
-
-      }
-      class "new"{
-
-      }
-      class "show"{
-
-      }
-    }
-    package "address_book.templates" {
-      class "base"{
-
-      }
-    }
 }
 
 "ContactController" ----- "FileUploader"

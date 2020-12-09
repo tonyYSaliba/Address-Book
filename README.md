@@ -100,7 +100,7 @@ PS: for more details please read [DesignDocument.md](./docs/DesignDocument.md)
 !['Edit Contact' Screenshot](./docs/images/Picture4.png)
 
 
-# Tasks management ~ Kanban board
+# Task Management ~ Kanban board
 
 
 !['Kanban board' Screenshot](./docs/images/Picture5.png)
