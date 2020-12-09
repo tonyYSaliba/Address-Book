@@ -1,13 +1,14 @@
 [![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg)](https://sonarcloud.io/dashboard?id=tonyYSaliba_Address-Book)
 
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=tonyYSaliba_Address-Book&metric=bugs)](https://sonarcloud.io/dashboard?id=tonyYSaliba_Address-Book)
-[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=tonyYSaliba_Address-Book&metric=code_smells)](https://sonarcloud.io/dashboard?id=tonyYSaliba_Address-Book)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=tonyYSaliba_Address-Book&metric=coverage)](https://sonarcloud.io/dashboard?id=tonyYSaliba_Address-Book)
-[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=tonyYSaliba_Address-Book&metric=duplicated_lines_density)](https://sonarcloud.io/dashboard?id=tonyYSaliba_Address-Book)
-[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=tonyYSaliba_Address-Book&metric=ncloc)](https://sonarcloud.io/dashboard?id=tonyYSaliba_Address-Book)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=tonyYSaliba_Address-Book&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=tonyYSaliba_Address-Book)
 [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=tonyYSaliba_Address-Book&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=tonyYSaliba_Address-Book)
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=tonyYSaliba_Address-Book&metric=security_rating)](https://sonarcloud.io/dashboard?id=tonyYSaliba_Address-Book)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=tonyYSaliba_Address-Book&metric=ncloc)](https://sonarcloud.io/dashboard?id=tonyYSaliba_Address-Book)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=tonyYSaliba_Address-Book&metric=coverage)](https://sonarcloud.io/dashboard?id=tonyYSaliba_Address-Book)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=tonyYSaliba_Address-Book&metric=duplicated_lines_density)](https://sonarcloud.io/dashboard?id=tonyYSaliba_Address-Book)
+
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=tonyYSaliba_Address-Book&metric=bugs)](https://sonarcloud.io/dashboard?id=tonyYSaliba_Address-Book)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=tonyYSaliba_Address-Book&metric=code_smells)](https://sonarcloud.io/dashboard?id=tonyYSaliba_Address-Book)
 [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=tonyYSaliba_Address-Book&metric=sqale_index)](https://sonarcloud.io/dashboard?id=tonyYSaliba_Address-Book)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=tonyYSaliba_Address-Book&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=tonyYSaliba_Address-Book)
 
