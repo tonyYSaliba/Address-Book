@@ -16,15 +16,16 @@
 ## Introduction
 
 
-This is a web applciation for an address book.
+This is an Address Book Web Application.
 
-features:
+Features:
 - Add Contacts
 - Edit Contacts
 - Delete Contacts
 - View All Contacts
 
 ## Installation Instructions
+
 to clone the repository and install all required modules
 ``` 
 >> git clone https://github.com/tonyYSaliba/Address-Book.git
@@ -33,7 +34,7 @@ to clone the repository and install all required modules
 
 ```
 
-Edit .env file to configure your database
+Edit your .env file to configure your database
 ```
 DATABASE_URL="mysql://db_user:db_password@127.0.0.1:3306/address_book_db"
 
@@ -79,6 +80,8 @@ Tools used:
 
 - Table ```CONTACT``` - contains **id, firt_name, last_name, street_address, zip_code, city, phone_number, birth_date, email_address, picture_url, country**
 
+
+PS: for more details please read [DesignDocument.md](./docs/DesignDocument.md)
 
 ## Screenshots
 
