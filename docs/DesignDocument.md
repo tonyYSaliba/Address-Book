@@ -16,13 +16,6 @@ Version:1
   - [Frontend](#frontend)
   - [Backend](#backend)
 - [Low level design](#low-level-design)
-<!-- - [Contents](#contents) -->
-- [Design Document](#design-document)
-- [Contents](#contents)
-- [High level design](#high-level-design)
-  - [Frontend](#frontend)
-  - [Backend](#backend)
-- [Low level design](#low-level-design)
 
 
 # High level design 
