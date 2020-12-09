@@ -233,18 +233,6 @@ package "address_book.templates.contact" {
 
       }
     }
-
-
-package "address_book.assets" {
-   class "app(Js)"{
-
-   }
-}
-package "address_book.assets.styles" {
-   class "app(css)"{
-
-   }
-}
 }
 
 "ContactController" ----- "FileUploader"
