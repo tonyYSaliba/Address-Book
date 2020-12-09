@@ -208,6 +208,43 @@ package "src.Form" {
    }
 }
 
+package "address_book.templates.contact" {
+      class "_delete_form"{
+
+      }
+      class "_form"{
+
+      }
+      class "edit"{
+
+      }
+      class "index"{
+
+      }
+      class "new"{
+
+      }
+      class "show"{
+
+      }
+    }
+    package "address_book.templates" {
+      class "base"{
+
+      }
+    }
+
+
+package "address_book.assets" {
+   class "app(Js)"{
+
+   }
+}
+package "address_book.assets.styles" {
+   class "app(css)"{
+
+   }
+}
 }
 
 "ContactController" ----- "FileUploader"
