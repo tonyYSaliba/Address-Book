@@ -1,4 +1,6 @@
 @startuml
+package "MVC"{
+
 package "View" {
 
 }
@@ -16,6 +18,7 @@ View -up->Controller
 Controller -> Model
 Model ->Controller
 
+}
 
 
 @enduml
