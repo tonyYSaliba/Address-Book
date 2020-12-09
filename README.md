@@ -86,7 +86,7 @@ Tools used:
 
 <hr/>
 
-!['View all' Screenshot](./docs/images/Picture1.png)
+!['View all' Screenshot](./docs/images/Picture2.png)
 
 <hr/>
 
