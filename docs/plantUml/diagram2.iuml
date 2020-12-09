@@ -1,0 +1,24 @@
+@startuml
+package "Backend" {
+
+package "address_book.src.service" {
+
+} 
+
+package "address_book.src.controller" {
+
+}
+
+package "address_book.src.entity" {
+
+}
+
+package "address_book.src.repository" {
+
+}
+
+package "address_book.src.form" {
+
+}
+
+}

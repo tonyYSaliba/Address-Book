@@ -1,0 +1,19 @@
+@startuml
+package "Frontend" {
+
+    package "address_book.templates" {
+
+    }
+
+
+package "address_book.assets" {
+
+    }
+
+
+address_book.assets -right-> address_book.templates
+
+
+
+}
+@enduml

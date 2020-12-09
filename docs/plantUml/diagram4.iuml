@@ -1,0 +1,21 @@
+@startuml
+package "View" {
+
+}
+
+package "Controller" {
+
+}
+package "Model" {
+
+}
+
+Controller -down-> View
+View -up->Controller
+
+Controller -> Model
+Model ->Controller
+
+
+
+@enduml

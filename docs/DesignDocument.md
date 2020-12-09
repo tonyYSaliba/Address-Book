@@ -25,58 +25,13 @@ The clients will access the application using only a browser.
 
 The system has three components: The View, which is developed with web technologies (JavaScript, HTML, CSS and Twig) and is in charge of collecting user inputs to send requests to the Controller; The Controller, which connects the view to the Model; The Model, which handles the system's business logic.
 
+![Diagram4](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/tonyYSaliba/Address-Book/master/docs/plantUml/diagram4.iuml)
 
-```plantuml
-@startuml
-package "View" {
-
-}
-
-package "Controller" {
-
-}
-package "Model" {
-
-}
-
-Controller -down-> View
-View -up->Controller
-
-Controller -> Model
-Model ->Controller
-
-
-
-@enduml
-
-
-```
 
 
 ## Frontend
 
-```plantuml
-@startuml
-package "Frontend" {
-
-    package "address_book.templates" {
-
-    }
-
-
-package "address_book.assets" {
-
-    }
-
-
-address_book.assets -right-> address_book.templates
-
-
-
-}
-@enduml
-
-```
+![Diagram3](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/tonyYSaliba/Address-Book/master/docs/plantUml/diagram3.iuml)
 
 **Templates Package**
 
@@ -90,33 +45,7 @@ Contains .css style sheets that are used to render the GUI and .js script files 
 
 ## Backend
 
-
-```plantuml
-@startuml
-package "Backend" {
-
-package "address_book.src.service" {
-
-} 
-
-package "address_book.src.controller" {
-
-}
-
-package "address_book.src.entity" {
-
-}
-
-package "address_book.src.repository" {
-
-}
-
-package "address_book.src.form" {
-
-}
-
-}
-```
+![Diagram2](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/tonyYSaliba/Address-Book/master/docs/plantUml/diagram2.iuml)
 
 **Entity Package**
 
@@ -146,78 +75,5 @@ The service package collects the calls related to the management of a specific e
 
 
 # Low level design
-
-
-```plantuml
-@startuml
-package "address_book" {
-package "src.service"  as ps {
-   class "FileUploader"{
-      - targetDirectory
-      - slugger
-      + __construct($targetDirectory, SluggerInterface $slugger)
-      + upload(UploadedFile $file)
-      + deleteFile(string $fileName = "")
-      + getTargetDirectory()
-   }
-}
-
-
-package "src.controller" as pc{
-   class "ContactController"{
-      +index(ContactRepository $contactRepository)
-      +new(Request $request, FileUploader $fileUploader)
-      +show(Contact $contact)
-      +edit(Request $request, Contact $contact, FileUploader $fileUploader)
-      +delete(Request $request, Contact $contact, FileUploader $fileUploader)
-   }
-}
-
-package "src.entity" {
-   class "Contact"{
-      -id
-      -firstName
-      -lastName
-      -streetAddress
-      -zipCode
-      -city
-      -phoneNumber
-      -birthDate
-      -emailAddress
-      -pictureUrl
-      -country
-   }
-
-}
-
-package "src.repository" {
-   class "ContactRepository"{
-      +__construct(ManagerRegistry $registry)
-      +find($id, $lockMode = null, $lockVersion = null)
-      +findOneBy(array $criteria, array $orderBy = null)
-      +findAll()
-      +findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
-   }
-
-}
-
-package "src.Form" {
-   class "ContactType"{
-      +buildForm(FormBuilderInterface $builder, array $options)
-      +configureOptions(OptionsResolver $resolver)
-   }
-}
-
-}
-
-"ContactController" ----- "FileUploader"
-"ContactController" ----- "ContactType"
-"Contact" ----- "ContactRepository"
-"ContactController" ----- "Contact"
-"Contact" ----- "ContactType"
-
-
-@enduml
-```
 
 ![Diagram1](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/tonyYSaliba/Address-Book/master/docs/plantUml/diagram1.iuml)
