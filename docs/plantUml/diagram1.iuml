@@ -1,0 +1,69 @@
+@startuml
+package "address_book" {
+package "src.service"  as ps {
+   class "FileUploader"{
+      - targetDirectory
+      - slugger
+      + __construct($targetDirectory, SluggerInterface $slugger)
+      + upload(UploadedFile $file)
+      + deleteFile(string $fileName = "")
+      + getTargetDirectory()
+   }
+}
+
+
+package "src.controller" as pc{
+   class "ContactController"{
+      +index(ContactRepository $contactRepository)
+      +new(Request $request, FileUploader $fileUploader)
+      +show(Contact $contact)
+      +edit(Request $request, Contact $contact, FileUploader $fileUploader)
+      +delete(Request $request, Contact $contact, FileUploader $fileUploader)
+   }
+}
+
+package "src.entity" {
+   class "Contact"{
+      -id
+      -firstName
+      -lastName
+      -streetAddress
+      -zipCode
+      -city
+      -phoneNumber
+      -birthDate
+      -emailAddress
+      -pictureUrl
+      -country
+   }
+
+}
+
+package "src.repository" {
+   class "ContactRepository"{
+      +__construct(ManagerRegistry $registry)
+      +find($id, $lockMode = null, $lockVersion = null)
+      +findOneBy(array $criteria, array $orderBy = null)
+      +findAll()
+      +findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+   }
+
+}
+
+package "src.Form" {
+   class "ContactType"{
+      +buildForm(FormBuilderInterface $builder, array $options)
+      +configureOptions(OptionsResolver $resolver)
+   }
+}
+
+}
+
+"ContactController" ----- "FileUploader"
+"ContactController" ----- "ContactType"
+"Contact" ----- "ContactRepository"
+"ContactController" ----- "Contact"
+"Contact" ----- "ContactType"
+
+
+@enduml
