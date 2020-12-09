@@ -27,9 +27,9 @@ features:
 ## Installation Instructions
 to clone the repository and install all required modules
 ``` 
-git clone https://github.com/tonyYSaliba/Address-Book.git
-cd address_book
-composer install
+>> git clone https://github.com/tonyYSaliba/Address-Book.git
+>> cd address_book
+>> composer install
 
 ```
 
@@ -41,9 +41,9 @@ DATABASE_URL="mysql://db_user:db_password@127.0.0.1:3306/address_book_db"
 
 to create the database and its tables 
 ```
-php bin/console doctrine:database:create
-php bin/console make:migration
-php bin/console doctrine:migrations:migrate
+>> php bin/console doctrine:database:create
+>> php bin/console make:migration
+>> php bin/console doctrine:migrations:migrate
 
 ```
 ## Architecture
@@ -86,7 +86,7 @@ Tools used:
 
 <hr/>
 
-!['Add Contact' Screenshot](./docs/images/Picture2.png)
+!['View all' Screenshot](./docs/images/Picture1.png)
 
 <hr/>
 
